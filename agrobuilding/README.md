@@ -11,10 +11,10 @@ With the use
 
 #### MenuAndNewCommentTest  
 Go to the home page
-Use Actions (sections.Header) to navigate through the pop-up in the menu: 
-�	buildMenu
-�	typesBuildMenu
-�	bmzTypesBuildMenu
+Use Actions (sections.Header) to navigate through the pop-up in the menu:  
+* buildMenu  
+* typesBuildMenu  
+* bmzTypesBuildMenu  
 Open the category page "БМЗ"  
   
 #### BMZCategory  
@@ -29,12 +29,12 @@ Fill in the fields in the comment form on the opens page
 #### CommentResponsePage  
 Get a response after sending CommentForm  
   
-**Compare actual and expected names Author**  
-**Check actual and expected the massage commentEmail**  
+*Compare actual and expected names Author*    
+*Check actual and expected the massage commentEmail*    
 
 
 #### newNameToBDTest
-**Check that the database (MySQL) there is a record of a new user and email who wrote a comment**
+*Check that the database (MySQL) there is a record of a new user and email who wrote a comment*  
   
 ***
   
@@ -52,8 +52,8 @@ Fill in the fields in the comment form on the opens page
 * Email  
 
 #### BlankCommentResponsePage
-**Check the error message**
-**Check Title the page where link is returning**
+*Check the error message*  
+*Check Title the page where link is returning*  
   
 ***
   
@@ -64,33 +64,33 @@ Fill in the fields in the comment form on the opens page
 #### �heckTitle404  
 Smoke test for the presence Title of 404 pages
 
-#### �heckElements404  
+#### CheckElements404  
 Check header page title  
 Check number links (5 li-elements) in the block "Свежие записи"  
 
-#### �heckSearch404  
+#### CheckSearch404  
 Check the default message "Search ..."  
 Validating the search  
 
-#### �heckArchivesDropdown404  
+#### CheckArchivesDropdown404  
 Expected default message archives dropdown - "Выберите месяц"  
 Check the title page after select in the archives dropdown  
 
-#### �heckCategoriesDropdown404  
+#### CheckCategoriesDropdown404  
 Expected default message categories dropdown - "Выберите рубрику"  
 Check the title page after select in the categories dropdown  
   
 ***  
   
   
-###SecurityTest
-*Check to try to send HTML code in the search form on the sidebar*
-
+###SecurityTest  
+*Check to try to send HTML code in the search form on the sidebar*  
+  
 #### HomePage  
 Use sections.SideBar, in the search field enter HTML code  
-<form action="http://live.hh.ru"><input type="submit"></form>  
-
+`<form action="http://live.hh.ru"><input type="submit"></form>`  
+  
 #### ErrorPage  
 Receive an error message: The query shows signs of an attempt to exploit the vulnerability on the site  
-Make a screenshot error page  
-Check the title error page  
+*Make a screenshot error page*  
+*Check the title error page*  
