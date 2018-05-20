@@ -1,0 +1,15 @@
+2018-05-18 18:11:29,359 INFO [main] tests.NewCommentAndNewAuthorToDBTest.newNameToBDTest(NewCommentAndNewAuthorToDBTest.java:74) - --- Test STARTED --------
+2018-05-18 18:11:29,375 INFO [main] tests.NewCommentAndNewAuthorToDBTest.newNameToBDTest(NewCommentAndNewAuthorToDBTest.java:75) - --- Connect MySQL DB --------
+2018-05-18 18:11:30,015 INFO [main] data.DataBase.<init>(DataBase.java:36) - Connection: com.mysql.jdbc.JDBC4Connection@35eaab
+2018-05-18 18:11:30,031 INFO [main] tests.NewCommentAndNewAuthorToDBTest.newNameToBDTest(NewCommentAndNewAuthorToDBTest.java:77) - --- Connected to MySQL --------
+2018-05-18 18:11:30,031 INFO [main] tests.NewCommentAndNewAuthorToDBTest.newNameToBDTest(NewCommentAndNewAuthorToDBTest.java:81) - Result value is nickcave208@gmail.com
+2018-05-18 18:31:29,046 INFO [main] tests.NewCommentAndNewAuthorToDBTest.newNameToBDTest(NewCommentAndNewAuthorToDBTest.java:72) - --- Test STARTED --------
+2018-05-18 18:31:29,062 INFO [main] tests.NewCommentAndNewAuthorToDBTest.newNameToBDTest(NewCommentAndNewAuthorToDBTest.java:73) - --- Connect MySQL DB --------
+2018-05-18 18:31:29,750 INFO [main] data.DataBase.<init>(DataBase.java:36) - Connection: com.mysql.jdbc.JDBC4Connection@21e98f
+2018-05-18 18:31:29,750 INFO [main] tests.NewCommentAndNewAuthorToDBTest.newNameToBDTest(NewCommentAndNewAuthorToDBTest.java:75) - --- Connected to MySQL --------
+2018-05-18 18:31:29,906 INFO [main] tests.NewCommentAndNewAuthorToDBTest.newNameToBDTest(NewCommentAndNewAuthorToDBTest.java:80) - Result value is nickcave248@gmail.com
+2018-05-18 18:33:40,359 INFO [main] tests.NewCommentAndNewAuthorToDBTest.newNameToBDTest(NewCommentAndNewAuthorToDBTest.java:72) - --- Test STARTED --------
+2018-05-18 18:33:40,375 INFO [main] tests.NewCommentAndNewAuthorToDBTest.newNameToBDTest(NewCommentAndNewAuthorToDBTest.java:73) - --- Connect MySQL DB --------
+2018-05-18 18:33:40,968 INFO [main] data.DataBase.<init>(DataBase.java:36) - Connection: com.mysql.jdbc.JDBC4Connection@35eaab
+2018-05-18 18:33:40,968 INFO [main] tests.NewCommentAndNewAuthorToDBTest.newNameToBDTest(NewCommentAndNewAuthorToDBTest.java:75) - --- Connected to MySQL --------
+2018-05-18 18:33:40,968 INFO [main] tests.NewCommentAndNewAuthorToDBTest.newNameToBDTest(NewCommentAndNewAuthorToDBTest.java:80) - Result value is nickcave248@gmail.com
