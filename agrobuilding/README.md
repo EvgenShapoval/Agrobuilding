@@ -61,7 +61,7 @@ Fill in the fields in the comment form on the opens page
 ### Page404Test   
 *Testing of the various fields on 404 page*  
 
-#### �heckTitle404  
+#### CheckTitle404  
 Smoke test for the presence Title of 404 pages
 
 #### CheckElements404  
@@ -83,7 +83,7 @@ Check the title page after select in the categories dropdown
 ***  
   
   
-###SecurityTest  
+### SecurityTest  
 *Check to try to send HTML code in the search form on the sidebar*  
   
 #### HomePage  
