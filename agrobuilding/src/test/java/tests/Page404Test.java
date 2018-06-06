@@ -17,7 +17,7 @@ public class Page404Test extends BaseTest {
 	}
 
 	@Test
-	public void CheckTitle404() {
+	public void checkTitle404() {
 
 //		Smoke test for the presence of 404 pages
 		String expectedTitle = "Страница не найдена - АгроCтрой";
@@ -29,24 +29,27 @@ public class Page404Test extends BaseTest {
 	}
 	
 	@Test
-	public void checkElements404() {
+	public void checkEntryHeader404() {
 	
 //		Check entry header page title
 		String expEntryHeader = "Ошибка 404: страница не найдена";
 		String actEntryHeader = page404.actualEntryHeader404();
 		
+		Assert.assertTrue("Fail. Expected entry header message - " + 
+		expEntryHeader + ". Actual message - " + actEntryHeader, 
+		expEntryHeader.equals(actEntryHeader));
+	}
+	
+	@Test
+	public void checkNumberLinks404() {
+	
 //		Check number links (5 li-elements) in the block "Свежие записи"
 		int expNumberLinks = 5;
 		int actNumberLinks = page404.numberLinksRecentEntries404();
-	
-		boolean checkEntryHeader = expEntryHeader.equals(actEntryHeader);
-		boolean checkNumberLinks = expNumberLinks == actNumberLinks;
 		
-		Assert.assertTrue("Fail. Expected entry header message - " + 
-		expEntryHeader + ". Actual message - " + actEntryHeader + 
-		" Or: Expected the number links in the block Свежие записи - " +
+		Assert.assertTrue("Fail. Expected the number links in the block Свежие записи - " +
 		expNumberLinks + ". Actual the number links - " + actNumberLinks, 
-		checkEntryHeader & checkNumberLinks);
+		expNumberLinks == actNumberLinks);
 	}
 	
 	@Test

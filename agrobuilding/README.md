@@ -61,22 +61,24 @@ Fill in the fields in the comment form on the opens page
 ### Page404Test   
 *Testing of the various fields on 404 page*  
 
-#### CheckTitle404  
+#### checkTitle404  
 Smoke test for the presence Title of 404 pages
 
-#### CheckElements404  
+#### checkEntryHeader404  
 Check header page title  
+
+#### checkNumberLinks404  
 Check number links (5 li-elements) in the block "Свежие записи"  
 
-#### CheckSearch404  
+#### checkSearch404  
 Check the default message "Search ..."  
 Validating the search  
 
-#### CheckArchivesDropdown404  
+#### checkArchivesDropdown404  
 Expected default message archives dropdown - "Выберите месяц"  
 Check the title page after select in the archives dropdown  
 
-#### CheckCategoriesDropdown404  
+#### checkCategoriesDropdown404  
 Expected default message categories dropdown - "Выберите рубрику"  
 Check the title page after select in the categories dropdown  
   
