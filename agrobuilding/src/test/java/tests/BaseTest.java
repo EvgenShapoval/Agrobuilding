@@ -12,7 +12,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class BaseTest {
 
-	protected static WebDriver driver;	
+	protected static WebDriver driver;
+		
 	@BeforeClass
 	public static void beforeClassTest() {
 		System.setProperty("webdriver.chrome.driver", "D:/soft/java/chromedriver.exe");
