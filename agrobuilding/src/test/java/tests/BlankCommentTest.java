@@ -31,13 +31,13 @@ public class BlankCommentTest extends BaseTest{
 		BlankCommentResponsePage blankCommentResponsePage = new BlankCommentResponsePage(driver);
 		
 //		Check the error message
-		String expErrorMessage = "ОШИБКА: пожалуйста, введите комментарий.";
+		String expErrorMessage = "РћРЁРР‘РљРђ: РїРѕР¶Р°Р»СѓР№СЃС‚Р°, РІРІРµРґРёС‚Рµ РєРѕРјРјРµРЅС‚Р°СЂРёР№.";
 		String actErrorMessage = blankCommentResponsePage
 				.actualErrorMessageInBlankCommentResponsePage();
 		
 //		Check the page where link is returning
 		blankCommentResponsePage.clickBackLinkInBlankCommentResponsePage();
-		String expTitleBackPage = "арочные ангары:";
+		String expTitleBackPage = " Р°СЂРѕС‡РЅС‹Рµ Р°РЅРіР°СЂС‹:";
 		String actTitleBackPage = actualTitle();
 		System.out.println(actTitleBackPage);
 		

@@ -32,7 +32,7 @@ public class Page404Test extends BaseTest {
 	public void checkEntryHeader404() {
 	
 //		Check entry header page title
-		String expEntryHeader = "������ 404: �������� �� �������";
+		String expEntryHeader = "Ошибка 404: страница не найдена";
 		String actEntryHeader = page404.actualEntryHeader404();
 		
 		Assert.assertTrue("Fail. Expected entry header message - " + 
@@ -43,11 +43,11 @@ public class Page404Test extends BaseTest {
 	@Test
 	public void checkNumberLinks404() {
 	
-//		Check number links (5 li-elements) in the block "������ ������"
+//		Check number links (5 li-elements) in the block "Свежие записи"
 		int expNumberLinks = 5;
 		int actNumberLinks = page404.numberLinksRecentEntries404();
 		
-		Assert.assertTrue("Fail. Expected the number links in the block ������ ������ - " +
+		Assert.assertTrue("Fail. Expected the number links in the block Свежие записи - " +
 		expNumberLinks + ". Actual the number links - " + actNumberLinks, 
 		expNumberLinks == actNumberLinks);
 	}
@@ -55,15 +55,15 @@ public class Page404Test extends BaseTest {
 	@Test
 	public void checkSearch404() {
 	
-//		Check the default message "Search �" in search-field
-		String expMesSearch = "Search �";
+//		Check the default message "Search …" in search-field
+		String expMesSearch = "Search …";
 		String actMesSearch = page404.defaultMessageInSearch404();
 		
 //		Validating the search
-		page404.inputSearchField404("������������");
+		page404.inputSearchField404("Агрохолдинги");
 		page404.clickSearchButton404();
 		
-		String expTitlePageSearch = " ������ ������������ ";
+		String expTitlePageSearch = " искали Агрохолдинги ";
 		String actTitlePageSearch = actualTitle();
 		
 		boolean checkMessSearchField = actMesSearch.equals(expMesSearch);
@@ -79,14 +79,14 @@ public class Page404Test extends BaseTest {
 	@Test
 	public void checkArchivesDropdown404() {
 		
-//		Expected default message archives dropdown - �������� �����
-		String expDefaultMessArch = "�������� �����";
+//		Expected default message archives dropdown - Выберите месяц
+		String expDefaultMessArch = "Выберите месяц";
 		String actDefaultMessArch = page404.actualDefaultMessArch404();
 		
 //		Check the title page after select in the archives dropdown
 		page404.selectionArchives404("https://agrobuilding.com/2018/02");
 				
-		String expTitlePageArch = "������� 2018 - ����C����";
+		String expTitlePageArch = "Февраль 2018 - АгроCтрой";
 		String actTitlePageArch = actualTitle();
 		
 		boolean checkDefaultMessArch = expDefaultMessArch.equals(actDefaultMessArch);
@@ -102,14 +102,14 @@ public class Page404Test extends BaseTest {
 	@Test
 	public void checkCategoriesDropdown404() {
 		
-//		Expected default message categories dropdown - �������� �������
-		String expdefaultMessCat = "�������� �������";
+//		Expected default message categories dropdown - Выберите рубрику
+		String expdefaultMessCat = "Выберите рубрику";
 		String actdefaultMessCat = page404.actualDefaultMessegeCategories404();
 		
 //		Check the title page after select in the categories dropdown
-		page404.selectCategories404("94");
+		page404.selectCategories404("57");
 				
-		String expTitlePageCat = "������ Comsilium - ����C����";
+		String expTitlePageCat = "Архивы Агрохолдинги - АгроCтрой";
 		String actTitlePageCat = actualTitle();
 				
 		boolean checkdefaultMessCat = expdefaultMessCat.equals(actdefaultMessCat);
