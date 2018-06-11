@@ -20,7 +20,7 @@ public class Page404Test extends BaseTest {
 	public void checkTitle404() {
 
 //		Smoke test for the presence of 404 pages
-		String expectedTitle = "Страница не найдена - АгроCтрой";
+		String expectedTitle = "РЎС‚СЂР°РЅРёС†Р° РЅРµ РЅР°Р№РґРµРЅР° - РђРіСЂРѕCС‚СЂРѕР№";
 		String actualTitle = actualTitle();
 				
 		Assert.assertTrue("Fail. Expected title 404 page - " + expectedTitle + 
@@ -32,7 +32,7 @@ public class Page404Test extends BaseTest {
 	public void checkEntryHeader404() {
 	
 //		Check entry header page title
-		String expEntryHeader = "Ошибка 404: страница не найдена";
+		String expEntryHeader = "пїЅпїЅпїЅпїЅпїЅпїЅ 404: пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ";
 		String actEntryHeader = page404.actualEntryHeader404();
 		
 		Assert.assertTrue("Fail. Expected entry header message - " + 
@@ -43,11 +43,11 @@ public class Page404Test extends BaseTest {
 	@Test
 	public void checkNumberLinks404() {
 	
-//		Check number links (5 li-elements) in the block "Свежие записи"
+//		Check number links (5 li-elements) in the block "пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ"
 		int expNumberLinks = 5;
 		int actNumberLinks = page404.numberLinksRecentEntries404();
 		
-		Assert.assertTrue("Fail. Expected the number links in the block Свежие записи - " +
+		Assert.assertTrue("Fail. Expected the number links in the block пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ - " +
 		expNumberLinks + ". Actual the number links - " + actNumberLinks, 
 		expNumberLinks == actNumberLinks);
 	}
@@ -55,15 +55,15 @@ public class Page404Test extends BaseTest {
 	@Test
 	public void checkSearch404() {
 	
-//		Check the default message "Search …" in search-field
-		String expMesSearch = "Search …";
+//		Check the default message "Search пїЅ" in search-field
+		String expMesSearch = "Search пїЅ";
 		String actMesSearch = page404.defaultMessageInSearch404();
 		
 //		Validating the search
-		page404.inputSearchField404("Агрохолдинги");
+		page404.inputSearchField404("пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ");
 		page404.clickSearchButton404();
 		
-		String expTitlePageSearch = " искали Агрохолдинги ";
+		String expTitlePageSearch = " пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ ";
 		String actTitlePageSearch = actualTitle();
 		
 		boolean checkMessSearchField = actMesSearch.equals(expMesSearch);
@@ -79,14 +79,14 @@ public class Page404Test extends BaseTest {
 	@Test
 	public void checkArchivesDropdown404() {
 		
-//		Expected default message archives dropdown - Выберите месяц
-		String expDefaultMessArch = "Выберите месяц";
+//		Expected default message archives dropdown - пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+		String expDefaultMessArch = "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ";
 		String actDefaultMessArch = page404.actualDefaultMessArch404();
 		
 //		Check the title page after select in the archives dropdown
 		page404.selectionArchives404("https://agrobuilding.com/2018/02");
 				
-		String expTitlePageArch = "Февраль 2018 - АгроCтрой";
+		String expTitlePageArch = "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ 2018 - пїЅпїЅпїЅпїЅCпїЅпїЅпїЅпїЅ";
 		String actTitlePageArch = actualTitle();
 		
 		boolean checkDefaultMessArch = expDefaultMessArch.equals(actDefaultMessArch);
@@ -102,14 +102,14 @@ public class Page404Test extends BaseTest {
 	@Test
 	public void checkCategoriesDropdown404() {
 		
-//		Expected default message categories dropdown - Выберите рубрику
-		String expdefaultMessCat = "Выберите рубрику";
+//		Expected default message categories dropdown - пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+		String expdefaultMessCat = "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ";
 		String actdefaultMessCat = page404.actualDefaultMessegeCategories404();
 		
 //		Check the title page after select in the categories dropdown
 		page404.selectCategories404("94");
 				
-		String expTitlePageCat = "Архивы Comsilium - АгроCтрой";
+		String expTitlePageCat = "пїЅпїЅпїЅпїЅпїЅпїЅ Comsilium - пїЅпїЅпїЅпїЅCпїЅпїЅпїЅпїЅ";
 		String actTitlePageCat = actualTitle();
 				
 		boolean checkdefaultMessCat = expdefaultMessCat.equals(actdefaultMessCat);
