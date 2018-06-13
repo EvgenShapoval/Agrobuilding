@@ -16,7 +16,7 @@ public class BaseTest {
 		
 	@BeforeClass
 	public static void beforeClassTest() {
-		System.setProperty("webdriver.chrome.driver", "D:/soft/java/chromedriver.exe");
+//		System.setProperty("webdriver.chrome.driver", "D:/soft/java/chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 	}
