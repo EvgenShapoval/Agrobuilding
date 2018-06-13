@@ -10,7 +10,7 @@ import org.openqa.selenium.support.ui.Select;
 
 public class Page404 extends BasePage {
 
-//	Header page title - Ошибка 404: страница не найдена
+//	Header page title - РћС€РёР±РєР° 404: СЃС‚СЂР°РЅРёС†Р° РЅРµ РЅР°Р№РґРµРЅР°
 	@FindBy(css="#main h1")
 	private WebElement entryHeader404;
 
@@ -23,7 +23,7 @@ public class Page404 extends BasePage {
 	private WebElement searchButton404;
 		
 	
-//	Block "Свежие записи" - 5 li-elements
+//	Block "РЎРІРµР¶РёРµ Р·Р°РїРёСЃРё" - 5 li-elements
 	@FindBys(@FindBy(css="#main ul > li"))
 	private List<WebElement> numberLinks404;
 
@@ -49,7 +49,7 @@ public class Page404 extends BasePage {
 		super(driver);
 	}
 	
-//	Header page title - Ошибка 404: страница не найдена
+//	Header page title - РћС€РёР±РєР° 404: СЃС‚СЂР°РЅРёС†Р° РЅРµ РЅР°Р№РґРµРЅР°
     public String actualEntryHeader404(){
         return entryHeader404.getText();
     }
@@ -69,7 +69,7 @@ public class Page404 extends BasePage {
     }
 	
     
-//	Block "Свежие записи" - 5 li-elements
+//	Block "РЎРІРµР¶РёРµ Р·Р°РїРёСЃРё" - 5 li-elements
     public int numberLinksRecentEntries404(){
         return numberLinks404.size();
     }
@@ -80,7 +80,7 @@ public class Page404 extends BasePage {
         return  DefaultMessageArchives404.getText();
     }
     
-//	Select default message archives dropdown - Выберите месяц
+//	Select default message archives dropdown - Р’С‹Р±РёСЂРёС‚Рµ РјРµСЃСЏС†
     public void selectionArchives404(String linkArchives404) {
     	Select archDropdown = new Select(archivesDropdown404);
     	archDropdown.selectByValue(linkArchives404);
